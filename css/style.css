@@ -70,6 +70,9 @@ body, input, select, textarea{
 .container{
 	max-width: 1170px;
 }
+body{
+	overflow-x: hidden;
+}
 
 /* Headings
 ______________________*/
@@ -1082,9 +1085,6 @@ ol li{}
 
 /* Responsive */
 @media (max-width: 1400px){
-	/* #header .logo{
-		display: none;
-	} */
 	#howworks{
 		background-position: inherit;
 	}
@@ -1092,9 +1092,740 @@ ol li{}
 		background-position: inherit;
 	}
 }
+@media (max-width: 1200px){
+	#getstarted h2{
+		font-size: 65px;
+    	line-height: 58px;
+	}
+	#getstarted .button{
+		font-size: 20px;
+	}
+	#getstarted .button::after{
+		width: 50px;
+    	left: -35px;
+	}
+	#howworks{
+		padding: 50px 0 100px;
+	}
+	.howworks-content{
+		padding: 0 30px 0;
+	}
+	.howworks-content h2{
+		font-size: 138px;
+		line-height: 115px;
+	}
+	.howworks-content em{
+		font-size: 30px;
+	}
+	.howworks-content p{
+		font-size: 22px;
+    	margin-right: 115px;
+	}
+	.howworks-content .button{
+		margin-top: 100%;
+		margin-left: 10px;
+		padding: 12px 20px;
+		font-size: 20px;
+	}
+	#forstudent{
+		padding: 90px 30px;
+	}
+	.forstudent-content h2{
+		font-size: 125px;
+		line-height: 120px;
+	}
+	.forstudent-content span{
+		font-size: 28px;
+		margin-bottom: 25px;
+	}
+	.forstudent-content p{
+		font-size: 24px;
+		line-height: 36px;
+	}
+	.forstudent-content p em{
+		display: block;
+	}
+	.forstudent-content .download-box{
+		margin-top: 40px;
+	}
+	.forstudent-content .download-box em{
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+	.forstudent-content .download-box .button{
+		padding: 12px 20px;
+		font-size: 20px;
+	}
+	#foruniversity{
+		padding: 50px 0 80px;
+	}
+	.foruniversity-content{
+		padding: 0 30px 0;
+		margin-top:60px;
+	}
+	.foruniversity-content h2{
+		font-size: 138px;
+		line-height: 115px;
+	}
+	.foruniversity-content h2 span{
+		font-size: 73px;
+    	line-height: 70px
+	}
+	.foruniversity-content em{
+		padding: 20px 0 40px;
+	}
+	.foruniversity-content p{
+		font-size: 26px;
+		margin-left: 135px
+	}
+	.foruniversity-content .button{
+		padding: 12px 20px;
+		font-size: 20px;
+		margin-top: 88%;
+		margin-left: 0;
+	}
+	#globalsecurity{
+		padding: 90px 30px;
+	}
+	.globalsecurity h2{
+		font-size: 90px;
+		line-height: 80px;
+		margin-bottom: 40px;
+	}
+	.globalsecurity p{
+		font-size: 25px;
+    	line-height: 37px;
+	}
+	.globalsecurity .download-box{
+		margin-top: 50px;
+	}
+	.globalsecurity .download-box em{
+		font-size: 20px;
+	}
+	.globalsecurity .download-box .button{
+		padding: 12px 20px;
+		font-size: 20px;
+	}
+	#availableon{
+		padding: 90px 30px;
+	}
+	#availableon h2{
+		font-size: 50px;
+	}
+	.container{
+		max-width:100%;
+		padding: 0;
+	}
+}
 
-@media (max-width: 800px){}
+@media (max-width: 1023px){
+	#home-banner .container{
+		padding: 0;
+	}
+	#header{
+		top: 80px;
+	}
+	#header .menu ul{
+		margin-left: 0;
+	}
+	#header .menu li{
+		margin-right: 24px;
+	}
+	#header .menu li a{
+		font-size: 20px;
+	}
+	#home-banner .banner-content{
+		padding: 250px 50px 100px;
+	}
+	h1{
+		font-size: 80px;
+	}
+	#getstarted{
+		padding: 100px 60px;
+	}
+	#getstarted .offset-2{
+		margin: 0;
+	}
+	#getstarted .col-sm-6{
+		display: block;
+		flex: inherit;
+		max-width: 65% !important;
+	}
+	#getstarted h2{
+		font-size: 52px;
+		line-height: 55px;
+	}
+	#getstarted p{
+		margin: 0;
+		font-size: 20px;
+		text-align: justify;
+	}
+	#getstarted .col-sm-3{
+		flex: inherit;
+		max-width: 35%;
+	}
+	#getstarted .button{
+		font-size: 17px;
+	}
+	#getstarted::before{
+		display: none;
+	}
+	#howworks{
+		margin-top: 0;
+		background: none;
+		padding: 0;
+	}
+	#howworks .container{
+		padding: 0;
+	}
+	.howworks-content{
+		padding: 0;
+	}
+	#howworks .sidelink{
+		display: none;
+	}
+	#howworks .col-sm-8{
+		background: url(../images/mobilebg.jpg) no-repeat;
+		background-position: right bottom;
+		flex: inherit;
+		max-width: 100%;
+		margin: 0;
+		padding: 100px 80px;
+		background-size: 100% auto;
+	}
+	#howworks .col-sm-4{
+		flex: inherit;
+		text-align: center;
+		max-width: 100%;
+		padding: 150px 30px;
+	}
+	.howworks-content .button{
+		margin: 0;
+	}
+	#forstudent::before{
+		display: none;
+	}
+	.forstudent-content{
+		padding: 0;
+	}
+	.forstudent-content h2 {
+		font-size: 90px;
+		line-height: 100px;
+	}
+	.forstudent-content span {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.forstudent-content p {
+		font-size: 20px;
+		line-height: 31px;
+	}
+	.forstudent-content .download-box {
+		margin-top: 35px;
+	}
+	.forstudent-content .download-box em {
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+	#forstudent .sidelink{
+		width: 17px;
+		height: 280px;
+		background-size: 100% auto;
+		position: absolute;
+		right: 5%;
+		top: -95px;
+		transform: inherit;
+	}
+	#foruniversity{
+		margin-top: 0;
+		background: none;
+		padding: 0;
+	}
+	#foruniversity .container{
+		padding: 0;
+	}
+	.foruniversity-content{
+		padding: 0;
+		margin: 0;
+	}
+	#foruniversity .col-sm-8{
+		background: none;
+		background:#e7e7e7;
+		flex: inherit;
+		max-width: 100%;
+		margin: 0;
+		padding: 100px 80px;
+		float: none !important;
+	}
+	#foruniversity .col-sm-4{
+		flex: inherit;
+		text-align: center;
+		max-width: 100%;
+		padding: 150px 30px;
+	}
+	.foruniversity-content .button{
+		margin: 0;
+	}
+	.foruniversity-content em{
+		display: none;
+	}
+	.foruniversity-content h2 {
+		font-size: 100px;
+		line-height: 90px;
+		margin-bottom: 40px;
+	}
+	.foruniversity-content h2 span {
+		font-size: 63px;
+		line-height: 60px;
+	}
+	.foruniversity-content p {
+		font-size: 21px;
+		margin-left: 135px;
+	}
+	.foruniversity-content ul {
+		padding: 40px 0 0 0;
+	}
+	.foruniversity-content li a{
+		font-size: 18px;
+	}
+	.foruniversity-content li::after{
+		width: 10px;
+		height: 11px;
+		margin: 5px 0 0 20px;
+	}
+	#globalsecurity {
+		padding: 90px 30px;
+	}
+	.globalsecurity{
+		padding: 0;
+	}
+	.globalsecurity h2 {
+		font-size: 72px;
+		line-height: 69px;
+		margin-bottom: 30px;
+	}
+	.globalsecurity p {
+		font-size: 20px;
+		line-height: 32px;
+	}
+	#globalsecurity .sidelink{
+		display: none;
+	}
+}
 
-@media (max-width: 640px){}
+@media (max-width: 767px){
+	#header {
+		top: 50px;
+	}
+	#header .logo {
+		padding-bottom: 25px;
+	}
+	#header .logo a{
+		width: 125px;
+    	height: 30px;
+	}
+	#header .menu li {
+		margin-right: 14px;
+	}
+	#header .menu li a {
+		font-size: 13px;
+		text-transform: capitalize;
+	}
+	#header .menu span{
+		display: none;
+	}
+	#home-banner .banner-content{
+		padding: 160px 30px 70px;
+	}
+	#home-banner .banner-content h1{
+		font-size: 45px;
+	}
+	#getstarted {
+		padding: 45px 30px;
+	}
+	#getstarted .col-sm-6 {
+		display: block;
+		flex: inherit;
+		max-width: 100% !important;
+	}
+	#getstarted h2 {
+		font-size: 45px;
+		line-height: 48px;
+		margin-bottom: 30px;
+	}
+	#getstarted p {
+		margin: 0;
+		font-size: 16px;
+		text-align: justify;
+	}
+	#getstarted .col-sm-3 {
+		flex: inherit;
+		max-width: 100%;
+		text-align: center;
+	}
+	#getstarted .button {
+		font-size: 17px;
+		margin: 30px 0 0 0;
+	}
+	#howworks .col-sm-8{
+		background-position: right top;
+		background-size: cover;
+		padding: 45px 30px;
+	}
+	.howworks-content h2 {
+		font-size: 75px;
+		line-height: 65px;
+		margin-bottom: 15px;
+	}
+	.howworks-content em {
+		font-size: 20px;
+	}
+	.howworks-content em::after{
+		width: 70px;
+		height: 4px;
+		background: #fff;
+		margin: 16px 0 21px;
+	}
+	.howworks-content p {
+		font-size: 16px;
+		margin-right: 0;
+		text-align: justify;
+	}
+	#howworks .col-sm-4 {
+		flex: inherit;
+		text-align: center;
+		max-width: 100%;
+		padding: 30px;
+	}
+	.howworks-content .button{
+		padding: 10px 15px;
+		font-size: 14px;
+		line-height: 1;
+		margin: 0;
+	}
+	.howworks-content .button::before{
+		width: 7px;
+		height: 8px;
+		margin: 0 15px 0 0;
+	}
+	#forstudent .sidelink{
+		display: none;
+	}
+	#forstudent {
+		padding: 45px 30px 50px;
+	}
+	.forstudent-content h2 {
+		font-size: 50px;
+		line-height: 65px;
+	}
+	.forstudent-content span {
+		font-size: 13px;
+		margin-bottom: 15px;
+	}
+	.forstudent-content p {
+		font-size: 15px;
+		line-height: 25px;
+		text-align: center;
+	}
+	.forstudent-content p em {
+		display: inline-block;
+	}
+	.forstudent-content .download-box {
+		margin-top: 25px;
+	}
+	.forstudent-content .download-box em {
+		font-size: 13px;
+		margin-bottom: 10px;
+	}
+	.forstudent-content .download-box .button {
+		padding: 10px 13px;
+		font-size: 13px;
+		line-height: 1;
+	}
+	.forstudent-content .button::before{
+		width: 9px;
+		height: 10px;
+		margin: 0 15px 0 0;
+	}
+	.foruniversity-content .row{
+		display: block;
+		margin: 0;
+	}
+	#foruniversity .col-sm-8{
+		padding: 45px 30px;
+	}
+	.foruniversity-content h2 {
+		font-size: 55px;
+		line-height: 60px;
+		margin-bottom: 20px;
+	}
+	.foruniversity-content h2 span {
+		font-size: 40px;
+		line-height: 40px;
+	}
+	.foruniversity-content p {
+		font-size: 16px;
+		margin-left: 0;
+		line-height: 25px;
+	}
+	.foruniversity-content ul {
+		padding: 25px 0 0 0;
+	}
+	.foruniversity-content ul li {
+		display: block;
+		margin: 0 0 10px 0;
+	}
+	.foruniversity-content li a {
+		font-size: 14px;
+	}
+	.foruniversity-content li a br{
+		display: none;
+	}
+	.foruniversity-content li::after{
+		width: 6px;
+		height: 7px;
+		margin: 6px 0 0 15px;
+	}
+	#foruniversity .col-sm-4{
+		padding: 30px;
+	}
+	.foruniversity-content .button {
+		padding: 10px 15px;
+		font-size: 14px;
+	}
+	.foruniversity-content .button::before{
+		width: 7px;
+		height: 8px;
+		margin: 0 15px 0 0;
+	}
+	#globalsecurity {
+		padding: 45px 30px;
+	}
+	.globalsecurity h2 {
+		font-size: 50px;
+		line-height: 55px;
+		margin-bottom: 20px;
+	}
+	.globalsecurity p {
+		font-size: 16px;
+		line-height: 25px;
+	}
+	.globalsecurity .download-box {
+		margin-top: 30px;
+	}
+	.globalsecurity .download-box em {
+		font-size: 15px;
+	}
+	.globalsecurity .download-box .button {
+		padding: 10px 15px;
+		font-size: 14px;
+		line-height: 1;
+	}
+	.globalsecurity .button::before{
+		width: 9px;
+		height: 10px;
+		margin: 0 16px 0 0;
+	}
+	#availableon {
+		padding: 45px 30px;
+	}
+	#availableon h2 {
+		font-size: 27px;
+		line-height: 35px;
+		margin-bottom: 15px
+	}
+	#availableon .container > span{
+		font-size: 13px;
+		margin-bottom: 20px;
+	}
+	#availableon .button{
+		padding: 11px 20px;
+		font-size: 15px;
+	}
+	#availableon .button::after{
+		width: 40px;
+		height: 2px;
+		position: absolute;
+		left: -30px;
+		top: 50%;
+	}
+	#availableon .available-now {
+		margin-top: 35px;
+	}
+	#availableon .available-now em{
+		font-size: 15px;
+		margin-bottom: 12px;
+	}
+	#availableon .available-now .store-btn.googleplay,
+	#availableon .available-now .store-btn.appstore{
+		width: 110px;
+		height: 35px;
+	}
+	#contactform{
+		padding: 45px 30px;
+	}
+	#contactform .offset-3{
+		margin: 0;
+		max-width: 100%;
+    	flex: inherit;
+	}
+	#contactform h2{
+		font-size: 33px;
+		margin-bottom: 40px;
+	}
+	input, textarea, select{
+		font-size: 15px !important;
+	}
+	.Input-label{
+		bottom: -20%;
+	}
+	#contactform .scroll-top{
+		display: none;
+	}
+}
 
-@media (max-width: 480px){}
+@media (max-width: 480px){
+	#header {
+		top: 30px;
+	}
+	#header .logo {
+		padding-bottom: 15px;
+	}
+	#header .logo a {
+		width: 100px;
+		height: 25px;
+	}
+	#header .menu li {
+		margin-right: 8px;
+	}
+	#header .menu li a {
+		font-size: 12px;
+		text-transform: capitalize;
+	}
+	#home-banner .banner-content {
+		padding: 125px 30px 50px;
+	}
+	#home-banner .banner-content h1 {
+		font-size: 35px;
+	}
+	#getstarted h2 {
+		font-size: 34px;
+		line-height: 40px;
+		margin-bottom: 18px;
+	}
+	#getstarted p {
+		margin: 0;
+		font-size: 14px;
+		text-align: justify;
+	}
+	#getstarted .button {
+		font-size: 12px;
+		margin: 25px 0 0 0;
+		padding: 10px 20px 7px;
+	}
+	#getstarted .button::after {
+		width: 37px;
+		left: -25px;
+	}
+	.howworks-content h2 {
+		font-size: 65px;
+		line-height: 55px;
+		margin-bottom: 10px;
+	}
+	.howworks-content em {
+		font-size: 15px;
+	}
+	.howworks-content em::after{
+		margin: 25px 0 30px;
+	}
+	.howworks-content p {
+		font-size: 14px;
+		margin-right: 0;
+		text-align: justify;
+	}
+	.forstudent-content h2 {
+		font-size: 40px;
+		line-height: 55px;
+	}
+	.forstudent-content span {
+		font-size: 10px;
+		margin-bottom: 12px;
+	}
+	.forstudent-content p {
+		font-size: 13px;
+		line-height: 21px;
+		text-align: center;
+	}
+	.forstudent-content .download-box em {
+		font-size: 11px;
+		margin-bottom: 10px;
+	}
+	.foruniversity-content h2 {
+		font-size: 45px;
+		line-height: 50px;
+		margin-bottom: 15px;
+	}
+	.foruniversity-content h2 span {
+		font-size: 35px;
+		line-height: 35px;
+	}
+	.foruniversity-content p {
+		font-size: 14px;
+		margin-left: 0;
+		line-height: 19px;
+	}
+	.foruniversity-content ul li {
+		display: block;
+		margin: 0 0 5px 0;
+	}
+	.foruniversity-content li a {
+		font-size: 12px;
+	}
+	.globalsecurity h2 {
+		font-size: 34px;
+		line-height: 35px;
+		margin-bottom: 10px;
+	}
+	.globalsecurity p {
+		font-size: 14px;
+		line-height: 21px;
+	}
+	.globalsecurity .download-box em {
+		font-size: 12px;
+	}
+	#availableon h2 {
+		font-size: 22px;
+		line-height: 30px;
+		margin-bottom: 15px;
+	}
+	#availableon .container > span {
+		font-size: 11px;
+		margin-bottom: 20px;
+	}
+	#availableon .button {
+		padding: 11px 20px;
+		font-size: 11px;
+	}
+	#availableon .available-now em {
+		font-size: 13px;
+		margin-bottom: 12px;
+	}
+	#availableon .available-now .store-btn.googleplay, 
+	#availableon .available-now .store-btn.appstore {
+		width: 90px;
+		height: 29px;
+	}
+	#contactform h2 {
+		font-size: 23px;
+		margin-bottom: 30px;
+	}
+	button.button{
+		font-size: 13px;
+		padding: 11px 45px 11px 10px;
+	}
+	button.button::before{
+		width: 8px;
+		height: 9px;
+		margin: 0 20px 0 0;
+	}
+}
